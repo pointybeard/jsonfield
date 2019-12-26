@@ -1,0 +1,24 @@
+{
+    "name": "pointybeard/json-field",
+    "description": "A field for Symphony CMS that validates and stores JSON data.",
+    "homepage": "https://github.com/pointybeard/jsonfield",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Alannah Kearney",
+            "email": "hi@alannahkearney.com",
+            "homepage": "http://alannahkearney.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/pointybeard/jsonfield/issues",
+        "wiki": "https://github.com/pointybeard/jsonfield/wiki"
+    },
+    "require": {
+        "php": ">=7.3",
+        "pointybeard/helpers-functions-json": "~1.0.0"
+    }
+}

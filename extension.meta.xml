@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="jsonfield" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+    <name>JSON Field</name>
+    <description>Stores and validates JSON data</description>
+    <repo type="github">https://github.com/pointybeard/jsonfield</repo>
+    <types>
+        <type>Field Types</type>
+        <type>JSON</type>
+    </types>
+    <authors>
+        <author>
+            <name github="pointybeard">Alannah Kearney</name>
+            <website>https://alannahkearney.com/</website>
+        </author>
+    </authors>
+    <releases>
+        <release version="1.0" date="2019-12-27" min="2.7">
+            - Initial release
+        </release>
+    </releases>
+</extension>
