@@ -97,7 +97,7 @@ class fieldJson extends Field
             $label->appendChild(new XMLElement('i', __('Optional')));
         }
 
-        $value = isset($data['value']) ? $data['value'] : null;
+        $value = $data['value'] ?? "";
         $textarea = Widget::Textarea('fields'.$fieldnamePrefix.'['.$this->get('element_name').']'.$fieldnamePostfix, (int) $this->get('size'), 50, (0 != strlen($value) ? General::sanitizeDouble($value) : null));
 
         /*
@@ -129,7 +129,7 @@ class fieldJson extends Field
     {
         $message = null;
 
-        if ('yes' === $this->get('required') && 0 == strlen(trim($data))) {
+        if ('yes' === $this->get('required') && 0 == strlen(trim((string)$data))) {
             $message = __('‘%s’ is a required field.', [$this->get('label')]);
 
             return self::__MISSING_FIELDS__;
@@ -153,7 +153,7 @@ class fieldJson extends Field
     {
         $status = self::__OK__;
 
-        if (0 == strlen(trim($data))) {
+        if (0 == strlen(trim((string)$data))) {
             return [];
         }
 
